@@ -1,0 +1,243 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+      <meta charset="UTF-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1">
+      <title>Personal site</title>
+      <link rel="stylesheet" href="./styles/style.css">
+      <link rel="stylesheet" href="./pages/index.css">
+    </head>
+    <body class="body">
+
+      <div class="page">
+
+        <section class="side-block">
+          <div class="author-block border">
+            <img class="author-block__avatar" src="./vendor/images/avatar.png" draggable="false">
+            <h1 class="author-block__user-name">Eugene Zhdanov</h1> <!-- Не уверен насчет Н1 -->
+            <p class="author-block__bio">Pussy licker, musician, Porsche-driver, philosopher, hookah amateur</p>
+            <div class="author-block__buttons">
+              <button class="author-block__subscribe-btn">Subscribe</button>
+              <button class="author-block__secondary-button author-block__secondary-button_type_cv-btn">See CV ↗</button><!-- Эти две кнопки не выровнены так как они инлайновые и судя по всему выравниваются относительно своего содержимого -->
+              <button class="author-block__secondary-button author-block__secondary-button_type_message-btn"><img src="./vendor/images/icons/message.svg"></button>
+            </div>
+            <ul class="socials">
+              <a class="socials__link socials__link_type_github" href="#"><li><img src="./vendor/images/icons/github.svg"></li></a>
+              <a class="socials__link socials__link_type_stack-overflow" href="#"><li><img src="./vendor/images/icons/stack-overflow.svg"></li></a>
+              <a class="socials__link socials__link_type_linkedin" href="#"><li><img src="./vendor/images/icons/LinkedIn.svg"></li></a>
+              <a class="socials__link socials__link_type_youtube" href="#"><li><img src="./vendor/images/icons/youtube.svg"></li></a>
+              <a class="socials__link socials__link_type_telegram" href="#"><li><img src="./vendor/images/icons/telegram.svg"></li></a>
+              <a class="socials__link socials__link_type_instagram" href="#"><li><img src="./vendor/images/icons/Instagram.svg"></li></a>
+            </ul>
+          </div>
+
+          <ul class="pinned-posts border">
+            <span class="pinned-posts__header">
+              <h3 class="pinned-posts__header-text">Pinned posts</h3><!-- Не знаю какой тут уровень заголовка -->
+              <img src="./vendor/images/icons/pin.svg">
+            </span>
+
+            <a class="pinned-posts__item" href="#">
+              <li>
+                <h4 class="pinned-posts__item-date">Nov 22, 2023</h4><!-- Не знаю какой тут уровень заголовка -->
+                <p class="pinned-posts__item-text">Brown Researchers Create Tool to Simplify Human-Robot Communication</p>
+              </li>
+            </a>
+            <a class="pinned-posts__item" href="#">
+              <li>
+                <h4 class="pinned-posts__item-date">Nov 22, 2023</h4><!-- Не знаю какой тут уровень заголовка -->
+                <p class="pinned-posts__item-text">Brown Researchers Create Tool to Simplify</p>
+              </li>
+            </a>
+            <a class="pinned-posts__item" href="#">
+              <li>
+                <h4 class="pinned-posts__item-date">Nov 22, 2023</h4><!-- Не знаю какой тут уровень заголовка -->
+                <p class="pinned-posts__item-text">Human-Robot Communication</p>
+              </li>
+            </a>
+            <a class="pinned-posts__item" href="#">
+              <li>
+                <h4 class="pinned-posts__item-date">Nov 22, 2023</h4><!-- Не знаю какой тут уровень заголовка -->
+                <p class="pinned-posts__item-text">Brown Researchers Create Tool to Simplify Human-Robot Communication</p>
+              </li>
+            </a>
+            <a class="pinned-posts__item" href="#">
+              <li>
+                <h4 class="pinned-posts__item-date">Nov 22, 2023</h4><!-- Не знаю какой тут уровень заголовка -->
+                <p class="pinned-posts__item-text">Brown Researchers Create Tool to Simplify</p>
+              </li>
+            </a>
+          </ul>
+        </section>
+
+        <main class="main border">
+          <nav class="topic-bar">
+            <button class="topic-bar__button topic-bar__button_active">All</button>
+            <button class="topic-bar__button">Engineering</button>
+            <button class="topic-bar__button">Music</button>
+            <button class="topic-bar__button">Books</button>
+            <button class="topic-bar__button">Philosophy</button>
+            <button class="topic-bar__button">Photos</button>
+            <button class="topic-bar__button">Pussy</button>
+
+            <button class="topic-bar__nav-button topic-bar__nav-button_right">
+              <!-- <img src="./vendor/images/icons/topic-bar__nav-button_right.svg"> -->
+            </button>
+          </nav>
+
+          <div class="main-inner">
+            <h1 class="topic-header">All posts</h1>
+
+            <input class="search-bar" type="text" placeholder="Search">
+
+            <article class="post">
+              <h3 class="post__topic">Engineering</h3>
+              <h2 class="post__header">Brown Researchers Create Tool to Simplify Human-Robot Communication</h2>
+              <ul class="post__info-block">
+                <li class="post__info post__info_date">Nov 22, 2023</li>
+                <li class="post__info post__info_read-time">2 minutes to read</li>
+                <li class="post__info post__info_comments-count">16 comments</li>
+              </ul>
+              <img class="post__related-image" src="./vendor/images/related-image.png">
+              <p class="post__text">
+                <a class="post__text-link"></a>
+                An email, a document, a research paper, a presentation, and even a JavaDoc code block consist of paragraphs, <a class="post__text-link" href="#">which are</a>
+                “self-contained units of discourse in writing dealing with a particular point or idea.” Visually, paragraphs are supposed
+                to be separated by a vertical space that is a bit larger than a vertical spacing between lines. To achieve this, for
+                example, in HTML, we wrap paragraphs in the &lt;p&gt; tag, while in LaTeX, we use \par or just an empty line between them.
+                 However, some people insert what <a class="post__text-link" href="#">are called</a> “soft line breaks” inside paragraphs—this is a bad practice that I suggest
+                you stay away from.
+              </p>
+              <ul class="post__hashtag-list">
+                <li class="post__hashtag">#hastag1</li>
+                <li class="post__hashtag">#hastag2</li>
+                <li class="post__hashtag">#hastag3</li>
+                <li class="post__hashtag">#hastag4</li>
+              </ul>
+              <div class="post__read-more-container">
+                <a class="post__read-more-link" href="#">Read More →</a>
+              </div>
+            </article>
+
+            <article class="post">
+              <h3 class="post__topic">Engineering</h3>
+              <h2 class="post__header">Bibcop: Style Checker for BibTeX</h2>
+              <ul class="post__info-block">
+                <li class="post__info post__info_date">Nov 22, 2023</li>
+                <li class="post__info post__info_read-time">2 minutes to read</li>
+                <li class="post__info post__info_comments-count">16 comments</li>
+              </ul>
+              <p class="post__text">
+                <a class="post__text-link"></a>
+                Almost every document you may write in <a class="post__text-link" href="#">LaTeX</a> format will have a list of references at the end. Most likely,
+                you will use <a class="post__text-link" href="#">BibTeX</a> or <a class="post__text-link" href="#">BibLaTeX</a> to print this list of references in a nicely formatted way. It is also highly
+                probable that your .bib file will contain many typographic, stylistic, and logical mistakes. I’m fairly
+                certain that you won’t find the time to identify and correct them. As a result, the “References” section in
+                your paper may appear sloppy. I suggest using the <a class="post__text-link" href="#">bibcop</a> package, which identifies mistakes in the .bib file
+                and auto-fixes some of them.
+              </p>
+              <ul class="post__hashtag-list">
+                <li class="post__hashtag">#hastag1</li>
+                <li class="post__hashtag">#hastag2</li>
+                <li class="post__hashtag">#hastag3</li>
+                <li class="post__hashtag">#hastag4</li>
+              </ul>
+              <div class="post__read-more-container">
+                <a class="post__read-more-link" href="#">Read More →</a>
+              </div>
+            </article>
+
+            <article class="post">
+              <h3 class="post__topic">Engineering</h3>
+              <h2 class="post__header">Brown Researchers Create Tool to Simplify Human-Robot Communication</h2>
+              <ul class="post__info-block">
+                <li class="post__info post__info_date">Nov 22, 2023</li>
+                <li class="post__info post__info_read-time">2 minutes to read</li>
+                <li class="post__info post__info_comments-count">16 comments</li>
+              </ul>
+              <p class="post__text">
+                <a class="post__text-link"></a>
+                An email, a document, a research paper, a presentation, and even a JavaDoc code block consist of paragraphs, <a class="post__text-link" href="#">which are</a>
+                “self-contained units of discourse in writing dealing with a particular point or idea.” Visually, paragraphs are supposed
+                to be separated by a vertical space that is a bit larger than a vertical spacing between lines. To achieve this, for
+                example, in HTML, we wrap paragraphs in the &lt;p&gt; tag, while in LaTeX, we use \par or just an empty line between them.
+                 However, some people insert what <a class="post__text-link" href="#">are called</a> “soft line breaks” inside paragraphs—this is a bad practice that I suggest
+                you stay away from.
+              </p>
+              <ul class="post__hashtag-list">
+                <li class="post__hashtag">#hastag1</li>
+                <li class="post__hashtag">#hastag2</li>
+                <li class="post__hashtag">#hastag3</li>
+                <li class="post__hashtag">#hastag4</li>
+              </ul>
+              <div class="post__read-more-container">
+                <a class="post__read-more-link" href="#">Read More →</a>
+              </div>
+            </article>
+
+          </div>
+
+          <section class="paging-section">
+
+            <div class="page-count-select-wrapper">
+              <select class="page-count-select">
+                <option>10 per page</option>
+                <option>50 per page</option>
+                <option>100 per page</option>
+              </select>
+            </div>
+
+            <nav class="pagination">
+              <ul class="pagination__list">
+                <li class="pagination__list-item">←</li>
+                <li class="pagination__list-item pagination__list-item_active">1</li>
+                <li class="pagination__list-item">2</li>
+                <li class="pagination__list-item">3</li>
+                <li class="pagination__list-item">4</li>
+                <li class="pagination__list-item">5</li>
+                <li class="pagination__list-item">...</li>
+                <li class="pagination__list-item">15</li>
+                <li class="pagination__list-item">→</li>
+              </ul>
+            </nav>
+
+          </section>
+
+        </main>
+
+        <footer class="footer">
+
+          <section class="footer__left-section">
+            <div class="footer__copyright-block">
+              <h4 class="footer__author">Eugene Zhdanov</h4>
+              <p class="footer__copyright">Thanks for reading. <a href="#">Privacy policy</a></p>
+            </div>
+            <ul class="socials">
+              <a class="socials__link socials__link_type_github" href="#"><li><img src="./vendor/images/icons/github.svg"></li></a>
+              <a class="socials__link socials__link_type_stack-overflow" href="#"><li><img src="./vendor/images/icons/stack-overflow.svg"></li></a>
+              <a class="socials__link socials__link_type_linkedin" href="#"><li><img src="./vendor/images/icons/LinkedIn.svg"></li></a>
+              <a class="socials__link socials__link_type_youtube" href="#"><li><img src="./vendor/images/icons/youtube.svg"></li></a>
+              <a class="socials__link socials__link_type_telegram" href="#"><li><img src="./vendor/images/icons/telegram.svg"></li></a>
+              <a class="socials__link socials__link_type_instagram" href="#"><li><img src="./vendor/images/icons/Instagram.svg"></li></a>
+            </ul>
+          </section>
+
+          <section class="footer__right-section">
+            <form class="subscription-form">
+              <input class="subscription-form__input" type="text" placeholder="Enter your name">
+              <input class="subscription-form__input" type="email" placeholder="Enter your email">
+              <!-- <label class="subscription-form__label"><input class="subscription-form__checkbox" type="checkbox">By subscribing, you agree to our <a href="#">Privacy Policy</a></label> -->
+              <fieldset class="subscription-form__fieldset">
+              <label class="subscription-form__label" for="subscription-agree"><input id="subscription-agree" class="subscription-form__checkbox" type="checkbox">By subscribing, you agree to our </label>
+              <a class="subscription-form__privacy-link" href="#">Privacy Policy</a>
+              </fieldset>
+              <input class="subscription-form__input subscription-form__input_type_submit" type="submit" Value="Subscribe">
+
+            </form>
+          </section>
+        </footer>
+
+      </div>
+
+    </body>
+</html>

@@ -1,0 +1,139 @@
+.post {
+  padding: 40px 0 38px;
+
+  border-bottom: 2px solid #3d3d3d;
+}
+
+.post:last-of-type {
+  border: none;
+}
+
+.post__topic {
+  font-family: "Space mono";
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 24px;
+  letter-spacing: 1px;
+
+  text-transform: uppercase;
+
+  color: #3d3d3d;
+}
+
+.post__header {
+  padding-top: 16px;
+
+  font-family: "Space mono";
+  font-size: 32px;
+  font-weight: 700;
+  line-height: 32px;
+  letter-spacing: -2px;
+
+  color: #3d3d3d;
+}
+
+.post__info-block {
+  padding-top: 16px;
+
+  font-family: "Inter";
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 24px;
+  letter-spacing: -0.48px;
+
+  color: #3d3d3d;
+
+  list-style: none;
+}
+
+.post__info {
+  padding-right: 13px;
+
+  display: inline-block;
+}
+
+.post__info::before {
+  content: "";
+
+  width: 24px;
+  height: 24px;
+
+  margin-right: 8px;
+
+  display: inline-block;
+  vertical-align: top;
+}
+
+.post__info_date::before {
+  background-image: url(../../vendor/images/icons/date-icon.svg);
+}
+
+.post__info_read-time::before {
+  background-image: url(../../vendor/images/icons/time-icon.svg);
+}
+
+.post__info_comments-count::before {
+  background-image: url(../../vendor/images/icons/comments-icon.png);
+}
+
+.post__related-image {
+  padding-top: 16px;
+}
+
+.post__text {
+  padding-top: 24px;
+
+  font-family: "Inter";
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 24px;
+  letter-spacing: -0.48px;
+
+  color: #3d3d3d;
+}
+
+.post__text-link {
+  font-family: "PT Sans";
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 24px;
+  letter-spacing: -0.6px;
+
+  color: #3d3d3d;
+}
+
+.post__hashtag-list {
+  padding-top: 8px;
+
+  list-style: none;
+}
+
+.post__hashtag {
+  margin-right: 8px;
+  padding: 5px 8.5px 4px;
+
+  font-family: "Space mono";
+  font-size: 12px;
+  font-weight: 400;
+  line-height: 16px;
+  letter-spacing: -0.24px;
+
+  display: inline-block;
+
+  color: #3d3d3d;
+  background-color: #ededed;
+}
+
+.post__read-more-container {
+  padding-top: 7px;
+}
+
+.post__read-more-link {
+  font-family: "Space mono";
+  font-size: 16px;
+  font-weight: 700;
+  line-height: 24px;
+  letter-spacing: -0.48px;
+
+  color: #3d3d3d;
+}

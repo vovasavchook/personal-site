@@ -1,0 +1,56 @@
+.socials {
+  width: 100%;
+  height: 48px;
+
+  list-style: none;
+
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-auto-flow: column;
+  grid-auto-columns: 1fr;
+}
+
+.socials__link {
+  width: 100%;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  position: relative;
+
+  user-select: none;
+}
+
+.socials__link:hover::before {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 100%;
+
+  background-color: #ffffff27;
+}
+
+.socials__link_type_github{
+  background-color: #191717;
+}
+
+.socials__link_type_stack-overflow{
+  background-color: #F58025;
+}
+
+.socials__link_type_linkedin{
+  background-color: #0A66C2;
+}
+
+.socials__link_type_youtube{
+  background-color: #FF0000;
+}
+
+.socials__link_type_telegram{
+  background: linear-gradient(259.41deg, #29A9EA 0%, #25A2DF 100%);
+}
+
+.socials__link_type_instagram{
+  background: linear-gradient(259.08deg, #FFF061 0%, #F68826 32.45%, #EF2674 69.42%, #692D91 100.51%);
+}

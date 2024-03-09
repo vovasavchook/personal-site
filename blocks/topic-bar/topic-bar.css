@@ -1,0 +1,53 @@
+.topic-bar {
+  display: flex;
+
+  position: relative;
+
+  overflow: hidden;
+
+  user-select: none;
+}
+
+.topic-bar__button {
+  width: 100%;
+
+  padding: 16px 28px;
+
+  font-family: "Space mono";
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 24px;
+  letter-spacing: -0.48px;
+  color: #3d3d3d;
+
+  background-color: #fff;
+
+  border: none;
+  border-bottom: 2px solid rgba(61, 61, 61, 0.4);
+}
+
+.topic-bar__button_active {
+  font-weight: 700;
+  border-bottom: 2px solid #3d3d3d;
+}
+
+.topic-bar__nav-button {
+  width: 24px;
+  height: 24px;
+
+  position: absolute;
+
+  background-color: #3d3d3d;
+  background-repeat: no-repeat;
+  background-position: 55% 50%;
+  border: none;
+  border-radius: 50%;
+
+  text-align: center;
+}
+
+.topic-bar__nav-button_right {
+  background-image: url(../../vendor/images/icons/topic-bar__nav-button_right.svg);
+  top: 16px;
+  right: 16px;
+}

@@ -1,0 +1,17 @@
+/* @import url(../vendor/normalize.css); */
+
+@import url(../styles/fonts.css);
+
+@import url(../blocks/author-block/author-block.css);
+
+@import url(../blocks/pinned-posts/pinned-posts.css);
+
+@import url(../blocks/socials/socials.css);
+
+@import url(../blocks/topic-bar/topic-bar.css);
+
+@import url(../blocks/post/post.css);
+
+@import url(../blocks/pagination/pagination.css);
+
+@import url(../blocks/footer/footer.css);

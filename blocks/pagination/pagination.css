@@ -1,0 +1,35 @@
+.pagination {
+  display: inline-block;
+
+  user-select: none;
+}
+
+.pagination__list {
+  list-style: none;
+
+  font-family: "Space mono";
+  font-size: 16px;
+  font-weight: 400;
+  letter-spacing: -0.48px;
+  line-height: 24px;
+
+  color: #3D3D3D;
+
+  display: flex;
+}
+
+.pagination__list-item {
+  padding: 7px 15.4px;
+
+  border: 1px solid #3D3D3D;
+  border-right: none;
+}
+
+.pagination__list-item:last-of-type {
+  border-right: 1px solid #3D3D3D;
+}
+
+.pagination__list-item_active {
+  background-color: #3D3D3D;
+  color: #fff;
+}

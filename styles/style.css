@@ -1,0 +1,126 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+*:focus {
+  outline: none;
+}
+
+*:focus-visible {
+  outline: 4px solid rgba(147, 219, 255, 1);
+}
+
+.border {
+  border: 2px solid #3D3D3D;
+
+  box-shadow: 8px 8px 0 0 #c2c2c2;
+}
+
+.body {
+  margin: 0;;
+}
+
+.page {
+  max-width: 1228px;
+
+  margin: 0 auto;
+  padding: 38px 0 32px;
+
+  font-size: 0;
+}
+
+.side-block {
+  width: 100%;
+  max-width: 400px;
+  height: 100vh;
+
+  margin-right: 16px;
+
+  display: inline-block;
+
+  vertical-align: top;
+}
+
+.main {
+  width: 100%;
+  max-width: 812px;
+  /* height: 2084px; */
+
+  display: inline-block;
+}
+
+.main-inner {
+  padding: 38px 56px 2px;
+}
+
+.topic-header {
+  padding-bottom: 22px;
+
+  font-family: "Space mono";
+  font-size: 32px;
+  font-weight: 700;
+  line-height: 32px;
+  letter-spacing: -2px;
+
+  color: #3D3D3D;
+
+  border: none;
+  border-bottom: 2px solid #3D3D3D;
+}
+
+.search-bar {
+  margin-top: 24px;
+  padding: 15px;
+  padding-left: 48px;
+
+  width: 100%;
+
+  font-family: "Space mono";
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 26px;
+  letter-spacing: -0.48px;
+
+  opacity: 60%;
+  color: #3D3D3D;
+  background: url(../vendor/images/icons/search-Icon.svg) no-repeat 17px 50%;
+  border: 1px solid #3D3D3D;
+}
+
+.paging-section {
+  padding: 6px 16px 8px;
+
+  height: 56px;
+
+  display: flex;
+  justify-content: space-between;
+
+  border-top: 2px solid #3D3D3D;
+}
+
+.page-count-select-wrapper {
+  padding-right: 10px;
+  display: inline-block;
+
+  border: 1px solid #3D3D3D;
+}
+
+.page-count-select {
+  padding: 6px 4px 6px 11px;
+
+  font-family: "Space mono";
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 24px;
+  letter-spacing: -0.48px;
+
+  color: #3d3d3d;
+  background-color: transparent;
+
+  border: none;
+  outline: none;
+
+  user-select: none;
+}

@@ -1,0 +1,80 @@
+.pinned-posts {
+  width: 100%;
+  max-width: 396px;
+  /* height: 524px; */
+
+  padding: 24px;
+  padding-bottom: 23px;
+
+  /* display: flex; */
+  flex-direction: column;
+  justify-content: space-between;
+
+  list-style: none;
+}
+
+.pinned-posts__header {
+  font-family: "Inter";
+  color: #3d3d3d;
+
+  display: flex;
+  justify-content: space-between;
+  align-items: baseline;
+
+  user-select: none;
+}
+
+.pinned-posts__header-text {
+  font-weight: 700;
+  font-size: 18px;
+  font-style: normal;
+  line-height: 24px;
+  letter-spacing: -0.48px;
+}
+
+.pinned-posts__item {
+  margin-top: 22px;
+
+  display: block;
+
+  text-decoration: none;
+  cursor: pointer;
+}
+
+.pinned-posts__item:hover {
+  background-color: rgba(61, 61, 61, 0.06);
+}
+
+.pinned-posts__item-date {
+  font-family: "Inter";
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 24px;
+  letter-spacing: -0.48px;
+  color: #3d3d3d;
+}
+
+.pinned-posts__item-date::before {
+  content: "";
+
+  width: 24px;
+  height: 24px;
+
+  margin-right: 8px;
+
+  display: inline-block;
+  vertical-align: top;
+
+  background-image: url(../../vendor/images/icons/date-icon.svg);
+}
+
+.pinned-posts__item-text {
+  padding-top: 10px;
+
+  font-family: "Inter";
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 24px;
+  letter-spacing: -0.48px;
+  color: #3d3d3d;
+}
